@@ -1,0 +1,87 @@
+*{
+    outline: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #760D54;
+}
+
+.logo-container{
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+div.lang-selector, .authentication-selector form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align:center;
+}
+
+div.lang-selector a.button, .auth-method{
+    background-color: #c0cdb0;
+    min-width: 200px;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+div.lang-selector a.button:hover, .auth-method:hover{
+    background-color: #23001a;
+    color: #ffffff;
+}
+
+.wide{
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+
+.footer a{
+    color: #ffffff;
+}
+
+
+/*authpage_en styles*/
+
+.heading-container{
+    color: #ffffff;
+}
+
+.heading-container .title{
+    font-family: 'Times New Roman';
+}
+
+label {
+    color: #ffffff;
+}
+
+input[type="text"]{
+    text-align: center;
+}
+
+
+/*SMS OTP Page*/
+.req-otp-btn{
+    background-color: #006500;
+    color: #ffffff;
+    min-width: 200px;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.req-otp-btn:hover{
+    background-color: #008e00;
+}
