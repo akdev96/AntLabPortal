@@ -25,21 +25,22 @@ function createOTP($formId, $mobileNo){
     $res = curl_exec($req);
 
     // to here
-
+    session_start(); 
     if ($response === false) {
-        echo "cURL Error: " . curl_error($curl);
-        header("Location: sms_auth.php");
+        echo "cURL Error while requesting OTP: " . curl_error($curl);
     } else {
         // Process the response
         $responseData = json_decode($response, true);
         if($responseData.result === 'ok'){
             $otpGen = $responseData.otp;
+            $_SESSION["OTP"]=$otpGen;
+            // redirect to otp enter page
+            // validate otp there
 
         } else {
             echo 'ERROR: '. $responseData.resultresultcode; 
             header("Location: sms_auth.php");
         }
-        // print_r($responseData);
     }
     
     curl_close($req); // and this
