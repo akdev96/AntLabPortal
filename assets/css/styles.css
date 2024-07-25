@@ -85,3 +85,13 @@ input[type="text"]{
 .req-otp-btn:hover{
     background-color: #008e00;
 }
+
+.notification{
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid white;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+}

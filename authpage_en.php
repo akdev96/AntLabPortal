@@ -22,8 +22,8 @@
 
         <div class="lang-selector">
             <a type="button" href="sms_auth.php" class="button">SMS Authentication</a>
-            <a type="button" href="sms_auth.php" class="button">Member Login</a>
-            <a type="button" href="sms_auth.php" class="button">Day Visitor (4hr)</a>
+            <a type="button" href="member_auth.php" class="button">Member Login</a>
+            <a type="button" href="dayvisitor_auth.php" class="button">Day Visitor (4hr)</a>
         </div>
 
     </section>
